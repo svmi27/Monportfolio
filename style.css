@@ -1,14 +1,333 @@
+/* ===== RESET & GLOBAL STYLES ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+/* ===== HEADER & NAVIGATION ===== */
+header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 2rem 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+/* ===== SECTIONS ===== */
+section {
+    max-width: 1000px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+section h2 {
+    color: #667eea;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 3px solid #764ba2;
+    padding-bottom: 0.5rem;
+}
+
+section h3 {
+    color: #764ba2;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+/* ===== PRESENTATION ===== */
+.presentation {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: #555;
+    margin: 1.5rem 0;
+    text-align: justify;
+}
+
+/* ===== CONTACT CARD ===== */
 .contact {
-    /* existing styles */
+    background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
+    border-left: 5px solid #667eea;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin: 2rem 0;
+}
+
+.contact h3 {
+    margin-top: 0;
+    color: #667eea;
+}
+
+.contact p {
+    margin: 0.8rem 0;
+    font-size: 1rem;
 }
 
 .contact a {
     color: #0077b5;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    margin-top: 0.5rem;
+    background-color: #0077b5;
+    color: white;
 }
 
 .contact a:hover {
+    background-color: #005885;
+    box-shadow: 0 4px 8px rgba(0, 119, 181, 0.3);
+    transform: translateY(-2px);
+}
+
+/* ===== TRANSITION BUTTON ===== */
+.transition {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.transition a {
+    display: inline-block;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.05rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(102, 126, 234, 0.3);
+}
+
+.transition a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(102, 126, 234, 0.4);
+}
+
+/* ===== EXPERIENCE CARD ===== */
+.experience-card {
+    background-color: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 2px solid #667eea;
+    margin: 1.5rem 0;
+}
+
+.experience-card h3 {
+    color: #667eea;
+    font-size: 1.3rem;
+}
+
+the.date {
+    color: #888;
+    font-size: 0.95rem;
+    font-style: italic;
+    margin: 0.5rem 0 1rem 0;
+}
+
+.experience-card ul {
+    list-style-position: inside;
+    margin-left: 1rem;
+}
+
+.experience-card li {
+    margin: 0.7rem 0;
+    color: #555;
+    line-height: 1.6;
+}
+
+.experience-card li::marker {
+    color: #764ba2;
+    font-weight: bold;
+}
+
+/* ===== PROJECTS LIST ===== */
+.projets-list {
+    list-style: none;
+    padding: 0;
+}
+
+.projets-list li {
+    background-color: #f8f9fa;
+    padding: 1.2rem;
+    margin: 1rem 0;
+    border-left: 4px solid #667eea;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.projets-list li:hover {
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.2);
+    transform: translateX(5px);
+}
+
+.projets-list a {
+    color: #667eea;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.projets-list a:hover {
+    color: #764ba2;
     text-decoration: underline;
-    color: #005885;
+}
+
+.multi {
+    color: #888;
+    font-size: 0.95rem;
+    margin-left: 0.5rem;
+}
+
+.multi a {
+    color: #764ba2;
+    font-weight: 500;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 3rem;
+    font-size: 0.95rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    nav {
+        gap: 1rem;
+        padding: 0 1rem;
+    }
+
+    nav a {
+        font-size: 0.95rem;
+        padding: 0.4rem 0.8rem;
+    }
+
+    section {
+        margin: 1.5rem;
+        padding: 1.5rem;
+    }
+
+    section h2 {
+        font-size: 1.5rem;
+    }
+
+    .presentation {
+        font-size: 1rem;
+        text-align: left;
+    }
+
+    .transition a {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.4rem;
+        letter-spacing: 0;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    nav a {
+        display: block;
+        text-align: center;
+    }
+
+    section {
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+    section h2 {
+        font-size: 1.3rem;
+    }
+
+    .contact {
+        padding: 1rem;
+    }
+
+    .experience-card ul {
+        margin-left: 0;
+    }
+
+    .experience-card li {
+        margin-left: 1rem;
+    }
 }
