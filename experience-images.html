@@ -1,30 +1,94 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <title>Images de mon expérience</title>
-    <link rel="stylesheet" href="experience-style.css"> <!-- ou style.css si tu l’ajoutes dedans -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0a111d">
+  <meta name="description" content="Huit semaines de stage comme technicien de maintenance chez ADS, d’avril à juin 2025, sur des ascenseurs et des monte-charges.">
+  <title>En maintenance chez ADS · Sami Tortel</title>
+  <link rel="stylesheet" href="details.css">
+  <script defer src="galerie.js"></script>
 </head>
 <body>
-
-<div class="container">
-    <h1>Mon stage – ADS Paris</h1>
-<div class="gallery">
-    <img src="image1.png.jpg" alt="Image 1">
-    <img src="images2.jpg" alt="Image 2">
-</div>
-
-<div class="gallery">
-    <img src="images3.jpg" alt="Image 3">
-    <img src="images4.jpg" alt="Image 4">
-</div>
-
-<div class="gallery">
-    <img src="images5.jpg" alt="Image 5">
-</div>
-
-    <a class="back-button" href="index.html">⬅ Retour au portfolio</a>
-</div>
-
+  <a class="skip" href="#contenu">Aller au contenu</a>
+  <header class="topbar">
+    <a class="brand" href="index.html" aria-label="Sami Tortel, accueil"><span class="monogram" aria-hidden="true">ST<span>.</span></span><span>Sami Tortel</span></a>
+    <nav aria-label="Navigation principale">
+      <a href="index.html#projets">Projets</a>
+      <a href="index.html#experience">Parcours</a>
+      <a class="contact-link" href="index.html#contact">Contact</a>
+    </nav>
+  </header>
+  <main id="contenu" class="sheet">
+    <a class="return-link" href="index.html#experience"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m13 5-7 7 7 7"/></svg>Retour au parcours</a>
+    <header class="case-head">
+      <div class="headline">
+        <p class="eyebrow">Expérience <span aria-hidden="true">/</span> Stage à Paris</p>
+        <h1>En maintenance chez ADS</h1>
+        <p class="intro">Huit semaines de stage comme technicien de maintenance chez ADS, d’avril à juin 2025, sur des ascenseurs et des monte-charges.</p>
+        <ul class="chips" aria-label="Repères"><li>ADS · Paris</li><li>Avril – juin 2025</li><li>8 semaines</li></ul>
+      </div>
+      <figure class="media-card media-lead">
+            <a class="gallery-link wide-photo" href="images2.jpg" data-large="assets/stage-2-large.webp" data-photo data-caption="La machinerie" aria-label="Agrandir : La machinerie">
+              <img src="assets/stage-2.webp" alt="Local technique avec des machines et une passerelle métallique protégée par un garde-corps." decoding="async">
+              <span class="enlarge" aria-hidden="true"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H3v5M3 3l6 6m7-6h5v5m0-5-6 6M3 16v5h5m-5 0 6-6m12 1v5h-5m5 0-6-6"/></svg></span>
+            </a>
+            <figcaption>La machinerie</figcaption>
+          </figure>
+    </header>
+    <section class="narrative" aria-labelledby="approche">
+      <h2 id="approche">Au cœur des installations</h2>
+      <p>Aux côtés de l’équipe technique, j’ai participé à la maintenance préventive et corrective, aux interventions sur les composants mécaniques et électriques et aux tests des systèmes de sécurité. J’ai aussi utilisé les outils de diagnostic et contribué à la rédaction des rapports d’intervention.</p>
+    </section>
+    <section class="gallery-section" aria-labelledby="documents">
+        <h2 id="documents">Photos du stage</h2>
+        <div class="gallery-grid stage-grid">
+          <figure class="media-card ">
+            <a class="gallery-link wide-photo" href="image1.png.jpg" data-large="assets/stage-1-large.webp" data-photo data-caption="La gaine d’ascenseur" aria-label="Agrandir : La gaine d’ascenseur">
+              <img src="assets/stage-1.webp" alt="Vue dans la gaine, le long des rails et des câbles de l’installation." decoding="async" loading="lazy">
+              <span class="enlarge" aria-hidden="true"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H3v5M3 3l6 6m7-6h5v5m0-5-6 6M3 16v5h5m-5 0 6-6m12 1v5h-5m5 0-6-6"/></svg></span>
+            </a>
+            <figcaption>La gaine d’ascenseur</figcaption>
+          </figure><figure class="media-card ">
+            <a class="gallery-link wide-photo" href="images3.jpg" data-large="assets/stage-3-large.webp" data-photo data-caption="Les armoires de commande" aria-label="Agrandir : Les armoires de commande">
+              <img src="assets/stage-3.webp" alt="Armoires rouges ouvertes laissant apparaître les cartes, les borniers et les câbles." decoding="async" loading="lazy">
+              <span class="enlarge" aria-hidden="true"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H3v5M3 3l6 6m7-6h5v5m0-5-6 6M3 16v5h5m-5 0 6-6m12 1v5h-5m5 0-6-6"/></svg></span>
+            </a>
+            <figcaption>Les armoires de commande</figcaption>
+          </figure><figure class="media-card ">
+            <a class="gallery-link wide-photo" href="images4.jpg" data-large="assets/stage-4-large.webp" data-photo data-caption="Vue de chantier" aria-label="Agrandir : Vue de chantier">
+              <img src="assets/stage-4.webp" alt="Éléments métalliques, parois et maçonnerie visibles dans l’environnement de chantier." decoding="async" loading="lazy">
+              <span class="enlarge" aria-hidden="true"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H3v5M3 3l6 6m7-6h5v5m0-5-6 6M3 16v5h5m-5 0 6-6m12 1v5h-5m5 0-6-6"/></svg></span>
+            </a>
+            <figcaption>Vue de chantier</figcaption>
+          </figure><figure class="media-card ">
+            <a class="gallery-link wide-photo" href="images5.jpg" data-large="assets/stage-5-large.webp" data-photo data-caption="Une carte à relais" aria-label="Agrandir : Une carte à relais">
+              <img src="assets/stage-5.webp" alt="Gros plan sur une carte électronique, ses relais et ses borniers orange." decoding="async" loading="lazy">
+              <span class="enlarge" aria-hidden="true"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H3v5M3 3l6 6m7-6h5v5m0-5-6 6M3 16v5h5m-5 0 6-6m12 1v5h-5m5 0-6-6"/></svg></span>
+            </a>
+            <figcaption>Une carte à relais</figcaption>
+          </figure>
+        </div>
+      </section>
+    <div class="next-item">
+      <span>Explorer le portfolio</span>
+      <a href="index.html#projets">Tous les projets</a>
+    </div>
+  </main>
+  <footer class="foot"><span>© 2026 Sami Tortel</span><a href="index.html">Retour à l’accueil</a></footer>
+  <dialog class="viewer" aria-labelledby="viewer-caption">
+    <div class="viewer-wrap">
+      <div class="viewer-top">
+        <span class="photo-counter" aria-hidden="true"></span>
+        <button class="viewer-close" type="button" aria-label="Fermer la photo"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m5 5 14 14M19 5 5 19"/></svg></button>
+      </div>
+      <figure class="viewer-figure"><img alt=""><figcaption id="viewer-caption" aria-live="polite"></figcaption></figure>
+      <div class="viewer-actions">
+        <button class="viewer-prev" type="button" aria-label="Photo précédente"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m14.5 5-7 7 7 7"/></svg></button>
+        <a class="original" href="images2.jpg" target="_blank" rel="noopener">Ouvrir l’original</a>
+        <button class="viewer-next" type="button" aria-label="Photo suivante"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m9.5 5 7 7-7 7"/></svg></button>
+      </div>
+    </div>
+  </dialog>
 </body>
 </html>
